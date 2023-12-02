@@ -10,7 +10,7 @@ int main() {
     cout.tie(0);
 
     // Open the input file
-    ifstream input("../../input.txt");
+    ifstream input("../input/input.txt");
     if (!input.is_open()) {
         cerr << "Error opening the file." << endl;
         return 1;
