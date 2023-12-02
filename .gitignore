@@ -1,18 +1,42 @@
-# Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-[Bb]uild/
-x64/
-x86/
-[Ww][Ii][Nn]32/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-bld/
-[Bb]in/
-[Oo]bj/
-[Ll]og/
-[Ll]ogs/
-# Add this line
-out/
+# CMake build directory
+/build/
+
+# Compiled objects
+*.o
+*.ko
+*.obj
+*.elf
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakeSettings.json
+
+# Visual Studio Code directory
+.vscode/
+
+# Compiled Dynamic Libraries
+*.so
+*.dylib
+
+# Compiled Static Libraries
+*.a
+
+# Package files
+*.deb
+*.dmg
+*.rpm
+*.msi
+*.zip
+*.tar.gz
+
+# Other files
+Thumbs.db
+.DS_Store
+
