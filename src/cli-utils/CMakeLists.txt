@@ -19,6 +19,8 @@ set(EXECUTABLES
     exe1
     exe2
     cat
+    tail
+    win_tail
 )
 
 
