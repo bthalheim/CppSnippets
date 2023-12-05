@@ -2,6 +2,9 @@
 /build/
 **/build/
 
+# Clang Cache file 
+**/.cache/
+
 
 # Compiled objects
 *.o
