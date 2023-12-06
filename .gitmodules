@@ -1,0 +1,3 @@
+[submodule "src/sqlite-hw/vcpkg"]
+	path = src/sqlite-hw/vcpkg
+	url = https://github.com/microsoft/vcpkg.git
