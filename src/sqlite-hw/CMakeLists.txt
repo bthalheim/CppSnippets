@@ -11,12 +11,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 
-include(CMakePrintHelpers)
+# Set the path to Vcpkg toolchain file
+set(CMAKE_TOOLCHAIN_FILE ${CMAKE_CURRENT_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake CACHE STRING "")
 
 
+set(VCPKG_TARGET_TRIPLET x64-windows CACHE STRING "")
 
-
-
+find_package(sqlite3 CONFIG REQUIRED)
 
 
 set(SOURCES
@@ -28,7 +29,7 @@ add_executable(sqlite-hw ${SOURCES})
 
 
 # Link SQLite to your executable
-target_link_libraries(sqlite-hw PRIVATE slqite3)
+target_link_libraries(sqlite-hw PRIVATE slqite3::sqlite3)
 
 
 
