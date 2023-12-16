@@ -2,9 +2,13 @@
 /build/
 **/build/
 
+<<<<<<< HEAD
 # Clang Cache file 
 **/.cache/
 
+=======
+.cache/
+>>>>>>> perf_metrics
 
 # Compiled objects
 *.o
