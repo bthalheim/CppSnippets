@@ -1,6 +1,6 @@
 
 cmake_minimum_required(VERSION 3.10)
-project(C_CURSES_HW)
+project(flash)
 
 # Source Files 
 file(GLOB SOURCES "src/*.c")
@@ -23,9 +23,9 @@ include_directories(
 
 
 # Create the Executable
-add_executable(C_CURSES_HW ${SOURCES})
+add_executable(flash ${SOURCES})
 
-target_link_libraries(C_CURSES_HW ${CURSES_LIBRARIES})
+target_link_libraries(flash ${CURSES_LIBRARIES})
 
 
 
